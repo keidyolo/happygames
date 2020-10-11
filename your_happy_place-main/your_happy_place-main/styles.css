@@ -1,0 +1,121 @@
+/* title section  */
+
+body {
+  background: #e72465;
+}
+
+h1 {
+  font-family: "Times New Roman", cursive;
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  margin: 0 100px;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.main {
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+
+.sticker {
+  display: inline-block;
+}
+
+/* End of title section */
+
+/* cards section  */
+
+.cards {
+  margin: 60px 0 0 40px;
+}
+
+.card {
+  width: 260px;
+  max-height: 260px;
+  display: inline-block;
+  margin-left: 40px;
+  position: relative;
+}
+.front {
+  width: 200px;
+  max-height: 260px;
+  background: #fff;
+}
+
+/* end of cards section  */
+
+/* card btn  */
+
+.cardchat:hover .chatbtn1 {
+  animation: drop 2s linear forwards;
+  z-index: 3;
+}
+.chatbtn1 {
+  font-weight: 800;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: -1;
+}
+
+.carddrum:hover .chatbtn2 {
+  animation: drop 2s linear forwards;
+  z-index: 3;
+}
+.chatbtn2 {
+  font-weight: 800;
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  z-index: -1;
+}
+
+.cardsimon:hover .chatbtn3 {
+  animation: drop 2s linear forwards;
+  z-index: 3;
+}
+.chatbtn3 {
+  font-weight: 800;
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+  z-index: -1;
+}
+.cardrock:hover .chatbtn4 {
+  animation: drop 2s linear forwards;
+  z-index: 3;
+}
+.chatbtn4 {
+  font-weight: 800;
+  position: absolute;
+  left: 55px;
+  bottom: 20px;
+  z-index: -1;
+}
+.btn-grid{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  margin-top: 20px;
+}
+.btn{
+  background-color: rgb(60, 52, 110);
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+@keyframes drop {
+  from {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(65px);
+    opacity: 1;
+  }
+}
